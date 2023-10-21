@@ -1,0 +1,8 @@
+version: '3'
+services:
+  python-container:
+    build:
+      context: . # Diretório onde está localizado o Dockerfile
+    volumes:
+      - .:/app
+    command: ["tail", "-f", "/dev/null"]
