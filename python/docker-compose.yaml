@@ -1,6 +1,7 @@
 version: '3'
 services:
   python-container:
+    container_name: estacio-python
     build:
       context: . # Diretório onde está localizado o Dockerfile
     volumes:
