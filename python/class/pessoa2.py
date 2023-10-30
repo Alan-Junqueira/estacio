@@ -1,12 +1,19 @@
 class Pessoa:
-    def __init__(self, name, age, weight, height):
+    _count = 0
+
+    def __init__(self, name, lastname, age, weight, height):
         self.name = name
+        self.lastname = lastname
         self.age = age
         self.weight = weight
         self.height = height
+        Pessoa._count += 1
 
     def set_name(self, name):
         self.name = name
+
+    def set_lastname(self, lastname):
+        self.lastname = lastname
 
     def set_age(self, age):
         self.age = age
@@ -29,6 +36,9 @@ class Pessoa:
     def get_height(self):
         return self.height
 
+    def get_lastname(self):
+        return self.lastname
+
     def get_imc(self):
         return self.weight / (self.height * self.height)
 
@@ -46,3 +56,12 @@ class Pessoa:
             return 'Obesidade grau 2'
         else:
             return 'Obesidade grau 3'
+
+    @classmethod
+    def fullName(cls, name, lastname):
+        obj = cls(name, lastname, 0, 0, 0)
+        return obj
+
+    @property
+    def counter(self):
+        return type(self)._count
