@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   python-container:
     container_name: estacio-python
@@ -6,4 +6,6 @@ services:
       context: . # Diretório onde está localizado o Dockerfile
     volumes:
       - .:/app
+    ports:
+      - 5000:5000
     command: ["tail", "-f", "/dev/null"]

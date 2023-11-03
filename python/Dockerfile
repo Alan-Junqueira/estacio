@@ -10,5 +10,7 @@ COPY . /app
 # Instale as dependências (se necessário)
 RUN pip install -r requirements.txt
 
+EXPOSE 5000
+
 # Mantenha o contêiner ativo com um loop infinito
 CMD ["tail", "-f", "/dev/null"]
