@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-static  int a = 0;  // vari�vel global, aloca��o est�tica
+static  int a = 0;  // variável global, alocação estática
 
 void incrementa(void)
 {
-int b = 0; // vari�vel local, aloca��o autom�tica
-static int c = 0; // vari�vel local, aloca��o est�tica
+int b = 0; // variável local, alocação automática
+static int c = 0; // variável local, alocação estática
 
 printf ("a: %d, b: %d, c: %d\n", a, b, c);
 a++ ;

@@ -1,22 +1,22 @@
     #include <stdio.h>
-    #include <conio.h>
+    // #include <conio.h>
     int main(void)
     {
-      //v_num é a variável que
-      //será apontada pelo ponteiro
+      //v_num ï¿½ a variï¿½vel que
+      //serï¿½ apontada pelo ponteiro
       int v_num = 10;
-      
-      //declaração de variável ponteiro
+
+      //declaraï¿½ï¿½o de variï¿½vel ponteiro
       int *ptr;
-      
-      //atribuindo o endereço da variável v_num ao ponteiro
+
+      //atribuindo o endereï¿½o da variï¿½vel v_num ao ponteiro
       ptr = &v_num;
-      
+
       printf("Utilizando ponteiros\n\n");
       printf ("Conteudo da variavel v_num: %d\n", v_num);
-      printf ("Endereço da variavel v_num: %x \n", &v_num);
+      printf ("Endereï¿½o da variavel v_num: %x \n", &v_num);
       printf ("Conteudo da variavel ponteiro ptr: %x", ptr);
-      
-      getch();
+
+      // getch();
       return(0);
     }

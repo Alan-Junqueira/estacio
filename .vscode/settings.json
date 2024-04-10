@@ -1,3 +1,15 @@
 {
-  "cSpell.words": ["passaro"]
+  "cSpell.words": ["passaro"],
+  "files.associations": {
+    ".prettierrc.json": "jsonc",
+    "*.js": "javascript",
+    "*.css": "css",
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    "*.tsx": "typescriptreact",
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "stdlib.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
